@@ -395,15 +395,20 @@ a{
     display: flex;
 }
 .info-checkbox{
+    width: 100%;
     padding: 34px  30px;
-    border-top: 1px solid #b7b7b7;;
-}
-.info-form :first-child{
-    border-right: 1px solid #b7b7b7;;
-}
-.info-checkbox{
+    border-top: 1px solid #b7b7b7;
     max-width: 403px;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+   
 }
+.info-form >:last-child{
+    border-left: 1px solid #b7b7b7;
+}
+
+
 .info-input{
     appearance: none;
     outline: none;
@@ -439,11 +444,9 @@ a{
 }
 #about{
     padding: 40px 0px 140px 0px;
-    /* background-color: #007aff; */
 }
 .about-wrapper{
     width: 100%;
-    min-height: 1052px;
     /* background-color: yellowgreen; */
     display: flex;
     flex-direction: column;
@@ -502,6 +505,114 @@ a{
     line-height: 21.6px;
     color: #282B22;
     padding-left: 10px;
+}
+#project{
+    width: 100%;
+    min-height: 696px;
+    background-color: #3D4A39;
+}
+.project-wrapper{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 696px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.project-card{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project-wrap{
+    max-width: 329px;
+    min-height: 496px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.project-title{
+    /* max-width: 329px; */
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 57.5px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.project-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    color: #ffffffa0;
+    margin-bottom: 40px;
+}
+.project-label > input{
+    width: 100%;
+    max-width: 300px;
+    min-height: 35px;
+    margin-bottom: 25px;
+    outline: none;
+    border: none;
+    padding: 0px 40px 5px 5px;
+    border-bottom: 1px solid #ffffffa0;
+    background-color: transparent;
+    font-size: 18px;
+    color: #fff;
+}
+.project-label > ::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.2px;
+    color: #ffffffa0;
+}
+.project-coment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.project-small-text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #ffffffa0;
+}
+.project-btn{
+    width: 100%;
+    max-width: 300px;
+    padding: 22px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #ffffffa0;
+    background-color: #AE7B3C;
+    border: none;
+    margin-bottom: 25px;
+}
+.project-check-label{
+    width: 100%;
+    display:flex ;
+    gap: 10px;
+    align-items: start;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: #ffffffa0;
+}
+#project-chec{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+}
+#project-chec:checked{
+    background-image: url("../images/kvadrat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5px 5px;
 }
 
 /* 
